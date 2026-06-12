@@ -1,3 +1,7 @@
+html{
+    scroll-behavior:smooth;
+}
+
 *{
     margin:0;
     padding:0;
@@ -24,6 +28,12 @@ header .container{
     display:flex;
     justify-content:space-between;
     align-items:center;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 nav a{
@@ -136,4 +146,35 @@ button{
     margin-bottom:20px;
     border-radius:10px;
     box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.quote{
+    padding:80px 10%;
+}
+
+.quote h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.quote form{
+    max-width:700px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.quote input,
+.quote select,
+.quote textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.quote button{
+    background:#222;
+    color:white;
 }
